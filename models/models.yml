@@ -1,0 +1,17 @@
+
+version: 2
+
+models:
+    - name: emp_gt_avg_sal
+      description: "A starter dbt model"
+      columns:
+          - name: salary
+            description: "The primary key for this table"
+            tests:
+                - check_negetive_col
+          - name: empid
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+            tags: ['test1']             

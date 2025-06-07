@@ -5,4 +5,9 @@ sources:
     schema: raw_data 
     tables:
       - name: employee
-      - name: customers
+        columns:
+         - name: empid
+           tests:
+           - unique
+           - not_null
+      - name: customers    
