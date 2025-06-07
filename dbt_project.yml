@@ -40,3 +40,9 @@ models:
     # Applies to all files under models/example/
     example:
       +materialized: table
+      +tags: example_tag
+      +query_tag: 'vinod'
+    compute_layer:
+      +materialized: view
+      +tags: example_tag
+      +query_tag: 'vinod'
