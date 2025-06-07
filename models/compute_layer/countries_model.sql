@@ -1,1 +1,1 @@
-select * from {{ref('country_codes')}} where 1=1
+select * from {{ref('country_codes')}} where 5=6
