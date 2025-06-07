@@ -1,3 +1,3 @@
 {{ config(materialized='ephemeral') }}
 
-select departmentno,avg(salary) as average_sal from RAW_DATA.EMPLOYEE group by 1
+select departmentno,max(salary) as average_sal from RAW_DATA.EMPLOYEE group by 1
